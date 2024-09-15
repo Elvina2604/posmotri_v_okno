@@ -69,6 +69,7 @@ ol {
 }
 
 .result__video {
+  object-position: center;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -99,29 +100,29 @@ ol {
 }
 
 .search-form__label { 
-  display: flex;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   width: fit-content;
 }
 
 .search-form__textfield {
   border: none;
-  width: 100%;
   padding: 2.5px 13px 2.5px 0;
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   line-height: 21.6px;
   font-weight: inherit;
-  width: 225px;
-  height: 27px;
+  max-width: 225px;
+  max-height: 27px;
   border-width: 1px 0px;
   border-style: solid;
   border-color: #FFFFFF;
   color: #FFFFFF;
   cursor: pointer;
   appearance: none;
- 
 }
 
 .search-form__textfield:focus {
@@ -267,12 +268,8 @@ ol {
 /* content__list */
 .content__list {
   position: relative;
-  width: 100%;
-  height: 100%;
   overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 298px;
-  max-width: 399px;
+  block-size: 298px;
 }
 
 .content__list-item {
@@ -281,13 +278,6 @@ ol {
 
 .content__list-item:last-child {
   margin-bottom: 0px;
-}
-
-.cards-list-item-template {
-  max-width: 398px;
-  max-height: 107px;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__card-link {
@@ -299,6 +289,7 @@ ol {
 
 .content__card-link:focus {
   outline: none;
+  background-color: #545050;
 }
 
 .content__card-link:focus-visible {
